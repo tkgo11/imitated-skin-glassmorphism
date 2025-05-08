@@ -1,6 +1,28 @@
 /* 부트스트랩 기본 폰트가 16이라 기본폰트 15인 리버티스킨은 bootstrap 반응형 부분을 쓰기가 힘듬
+
    그래서 그냥 px로 때려박는걸로
+
 */
+
+/* Glassmorphism utility class for mobile */
+.glassmorphism-mobile {
+    background: rgba(255,255,255,0.22);
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.10);
+    backdrop-filter: blur(8px) saturate(120%);
+    -webkit-backdrop-filter: blur(8px) saturate(120%);
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.14);
+}
+
+/* Glassmorphism dark mode for mobile */
+.glassmorphism-mobile-dark {
+    background: rgba(40,44,52,0.32);
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.12);
+    backdrop-filter: blur(8px) saturate(120%);
+    -webkit-backdrop-filter: blur(8px) saturate(120%);
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
 
 /* Max-width: 1023 데스크탑 마지노선 */
 @media (max-width: 1023px) {
@@ -75,6 +97,12 @@
 
     .Liberty .content-wrapper .liberty-content .liberty-content-main {
         padding: 0.5rem;
+        background: rgba(255,255,255,0.35);
+        box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.10);
+        backdrop-filter: blur(8px) saturate(120%);
+        -webkit-backdrop-filter: blur(8px) saturate(120%);
+        border-radius: 14px;
+        border: 1px solid rgba(255,255,255,0.14);
     }
 
     .Liberty .content-wrapper .liberty-content .liberty-content-main #upload-div {
@@ -99,13 +127,22 @@
 
     .Liberty .content-wrapper .liberty-content .bottom-ads {
         padding: 0.5rem;
-        background-color: #fff;
-        border-left: 1px solid #e1e8ed;
-        border-right: 1px solid #e1e8ed;
+        background: rgba(255,255,255,0.32);
+        box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.08);
+        backdrop-filter: blur(6px) saturate(120%);
+        -webkit-backdrop-filter: blur(6px) saturate(120%);
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,0.12);
     }
 
     .Liberty .content-wrapper .liberty-footer {
         padding: 0.5rem;
+        background: rgba(255,255,255,0.32);
+        box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.08);
+        backdrop-filter: blur(8px) saturate(120%);
+        -webkit-backdrop-filter: blur(8px) saturate(120%);
+        border-radius: 14px;
+        border: 1px solid rgba(255,255,255,0.12);
     }
 }
 

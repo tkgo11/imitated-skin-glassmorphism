@@ -113,6 +113,54 @@ del, s, strike {
 .Liberty, body {
     background-color: #f5f5f5;
 }
+
+/* Glassmorphism utility class */
+.glassmorphism {
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(12px) saturate(160%);
+    -webkit-backdrop-filter: blur(12px) saturate(160%);
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.18);
+}
+
+/* Apply Glassmorphism to main containers */
+.Liberty .content-wrapper .liberty-content .liberty-content-main,
+.Liberty .content-wrapper .liberty-footer,
+.Liberty .nav-wrapper,
+.dropdown-menu,
+.modal-content {
+    background: rgba(255,255,255,0.40);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(10px) saturate(160%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%);
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.18);
+}
+
+/* Make sure nav stays visually distinct */
+.Liberty .nav-wrapper {
+    background: rgba(65,136,241,0.60);
+    border-bottom: 1px solid rgba(255,255,255,0.22);
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.10);
+}
+
+/* Optional: soften hover for nav items */
+.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover {
+    background: rgba(33,68,121,0.50);
+    transition: 0.3s;
+}
+
+/* Modal glass effect */
+.modal-content {
+    background: rgba(255,255,255,0.35);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(14px) saturate(180%);
+    -webkit-backdrop-filter: blur(14px) saturate(180%);
+}
+
 /* 백그라운드 색 지정 End*/
 
 /* 컨텐츠 넓이 수정 및 가운대 정렬 */
@@ -314,7 +362,9 @@ del, s, strike {
     font-size: 1rem;
     white-space: unset;
     word-break: break-all;
+
     padding: 3px 15px
+
 }
 
 .Liberty .nav-wrapper .navbar .navbar-login .login-dropdown-menu .username:hover {
